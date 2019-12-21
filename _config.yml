@@ -12,7 +12,7 @@ permalink: pretty
 title: Musings in Ink
 tagline: '@prashantkuntala'
 description: 'by <a href="https://twitter.com/prashkuntala" target="_blank">@prashkuntala</a>.'
-url: https://prashantkuntala.github.io/
+url: https://prashantkuntala.github.io
 baseurl: /
 
 paginate: 2
