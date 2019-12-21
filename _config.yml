@@ -1,0 +1,22 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: Musings in Ink
+tagline: '@prashantkuntala'
+description: 'by <a href="https://twitter.com/prashkuntala" target="_blank">@prashkuntala</a>.'
+url: https://prashantkuntala.github.io/
+baseurl: /
+
+paginate: 2
+
+# Custom vars
+github:
+  repo: https://github.com/PrashantKuntala
