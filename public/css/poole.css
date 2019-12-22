@@ -227,12 +227,24 @@ blockquote p:last-child {
   }
 }
 
+/* edited by prashantkuntala */
 img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
-  margin: 0 0 1rem;
+  /* margin: 0 0 1rem; */
   border-radius: 5px;
 }
+
+.emoji-container img{
+  height: 25px;
+  width: 25px;
+  margin-bottom: -2px;
+}
+
+.social-icons{
+  font-size: 1.5rem;
+}
+
 
 /* Tables */
 table {

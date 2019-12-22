@@ -4,6 +4,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-gist
+  - jemoji
 
 # Permalinks
 permalink: pretty
@@ -11,12 +12,14 @@ permalink: pretty
 # Setup
 title: Musings in Ink
 tagline: '@prashantkuntala'
-description: 'by <a href="https://twitter.com/prashkuntala" target="_blank">@prashkuntala</a>.'
+description: "by Prashant Kuntala"
 url: https://prashantkuntala.github.io
 baseurl: /
 
-paginate: 2
+paginate: 5
 
 # Custom vars
 github:
   repo: https://github.com/PrashantKuntala
+linkedIn: https://linkedin.com/in/prashantkumarkuntala
+twitter: https://twitter.com/prashkuntala
