@@ -1,0 +1,27 @@
+---
+layout: page
+title: Blog
+---
+<hr>
+<h4>Topics</h4>
+{% for tag in site.tags %}
+<code><a href="#{{tag[0] | slugify}}">{{tag[0] | capitalize}} <i class="fas fa-tags"></i></a></code>
+{% endfor %}
+
+<hr>
+
+{% for tag in site.tags %}
+  <h3 id="{{tag[0] | slugify}}">{{ tag[0] | capitalize}}</h3>
+  <ul class="related-posts">
+    {% for post in tag[1] %}
+    <li>
+      <h3>
+        <a href="{{ post.url }}">
+          <small>{{ post.date | date_to_string }}</small>
+          {{ post.title }}
+        </a>
+      </h3>
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
