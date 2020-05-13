@@ -7,12 +7,12 @@ plugins:
   - jemoji
 
 # Permalinks
-permalink: pretty
+permalink: /:categories/:title/
 
 # Setup
-title: Musings in Ink
+title: Prashant Kuntala
 tagline: '@prashantkuntala'
-description: "by Prashant Kuntala"
+description: ""
 url: https://prashantkuntala.github.io
 baseurl: /
 
@@ -23,3 +23,4 @@ github:
   repo: https://github.com/PrashantKuntala
 linkedIn: https://linkedin.com/in/prashantkumarkuntala
 twitter: https://twitter.com/prashkuntala
+codepen: https://codepen.io/prashantkuntala

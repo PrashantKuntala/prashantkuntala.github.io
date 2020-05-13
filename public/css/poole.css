@@ -228,22 +228,39 @@ blockquote p:last-child {
 }
 
 /* edited by prashantkuntala */
-img {
-  /* display: block; */
-  max-width: 100%;
-  /* margin: 0 0 1rem; */
-  border-radius: 5px;
-}
-
-.emoji-container img{
-  height: 25px;
-  width: 25px;
-  margin-bottom: -2px;
-}
 
 .social-icons{
   font-size: 1.5rem;
+  padding: 10px;
 }
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,340px);
+  grid-gap: 30px;
+  padding-top: 20px;
+
+}
+
+.item, .item:hover{
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+img{
+width: 100%;
+}
+
+.project-img{
+  border: 1px solid #666;
+  height: 120px;
+}
+
+/* end of custom css  */
 
 
 /* Tables */
@@ -401,7 +418,6 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }

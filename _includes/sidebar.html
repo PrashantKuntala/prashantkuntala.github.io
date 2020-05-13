@@ -6,11 +6,15 @@
           {{ site.title }}
         </a>
       </h1>
+      <a class="social-icons" href="{{ site.github.repo }}"><i class="fab fa-github"></i></a>
+      <a class="social-icons" href="{{ site.linkedIn }}"><i class="fab fa-linkedin-in"></i></a>
+      <a class="social-icons" href="{{ site.twitter }}"><i class="fab fa-twitter"></i></a>
+      <a class="social-icons" href="{{site.codepen}}"><i class="fab fa-codepen"></i></a>
       <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.url | absolute_url}}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.url | absolute_url}}">About Me</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -26,9 +30,7 @@
         {% endif %}
       {% endfor %}
 
-      <a class="social-icons" href="{{ site.github.repo }}"><i class="fab fa-github-square"></i></a>
-      <a class="social-icons" href="{{ site.linkedIn }}"><i class="fab fa-linkedin"></i></a>
-      <a class="social-icons" href="{{ site.twitter }}"><i class="fab fa-twitter-square"></i></a>
+
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
