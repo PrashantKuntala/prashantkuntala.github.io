@@ -242,6 +242,15 @@ blockquote p:last-child {
 
 }
 
+.bioconda-list{
+  font-size: .9rem;
+  list-style-type: square;
+}
+
+.bioconda-list a{
+  text-decoration: none
+}
+
 .item, .item:hover{
   font-size: 16px;
   text-rendering: optimizeLegibility;
