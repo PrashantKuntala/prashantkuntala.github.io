@@ -1,30 +1,76 @@
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-gist
-  - jemoji
-
-# Permalinks
-permalink: /:categories/:title/
-
-# Setup
-title: Prashant Kuntala
-tagline: '@prashantkuntala'
-description: ""
-url: https://prashantkuntala.github.io
-baseurl: /
-
-paginate: 5
+site: Home
+title: Home
+description: >-
+  Prashant Kuntala
+googlewebfonts: Fira+Code:wght@400;500;700
+data-theme: light # default theme "dark" | "light"
 
 # Custom vars
 github:
-  repo: https://github.com/PrashantKuntala
+  profile: https://github.com/PrashantKuntala
 linkedIn: https://linkedin.com/in/prashantkumarkuntala
 twitter: https://twitter.com/prashkuntala
 codepen: https://codepen.io/prashantkuntala
 medium: https://medium.com/@prashantkuntala
+
+# URL settings
+url: "http://localhost:4000"
+baseurl:  "/"
+permalink: pretty
+
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-paginate
+  - jekyll-gist
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
 
 # google analytics
 google_analytics: UA-168573655-1

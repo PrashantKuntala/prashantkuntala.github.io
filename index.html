@@ -1,23 +1,134 @@
 ---
 layout: default
-title: About Me
 ---
+<section id="intro">
+  <div class="flex-row-between">
+    <h1> 👋 Hi, I'm Prashant Kuntala</h1>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  <div class="flex-row-around">
+    <a href="{{site.github.profile}}" title="Github" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
 
-<div>
-  <img src="./public/assets/pk.jpg" alt="Prashant Kuntala" style="
-  border-radius: 10%; max-width:20%;" /><br>
-  <hr>
-  <p>Hi, I'm Prashant. </p>
+    <a href="{{site.linkedIn}}" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
 
-  <p> I design and develop large scale genomic applications with integrated data visualizations to better understand gene regulation and protein interactions. <br> I create and maintain conda packages for bioinformatic software on <a href="https://bioconda.github.io/"> bioconda.</a></p>
+    <a href="{{site.twitter}}" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
 
-  <p>My work as a Computational Scientist in <a href="http://pughlab.mbg.cornell.edu/"> Frank Pugh's lab</a> was focused on building Galaxy based high-throughput analysis pipelines that leverages high performance computing and to design and build web infrastructure for knowledge discovery platforms.</p>
+  </div>
+  <br>
+  <div class="bio">
+    <p>
+      I am a graduate student at the <a href="https://wustl.edu/" title="WashU" target="_blank" rel="noopener noreferrer">Washington University in St.Louis</a>, studying computational and systems biology in the <a
+        href="https://dbbs.wustl.edu/prospstudents/AboutDBBS/Pages/AboutDBBS.aspx" title="Division of Biology and Biomedical Sciences" target="_blank" rel="noopener noreferrer">DBBS</a> program.
+    </p>
+    <br>
+    <p>
+      Previously, I was a Computational Scientist at <a href="https://psu.edu/" title="pennstate" target="_blank" rel="noopener noreferrer">The Pennsylvania State University</a>, where I worked with <a href="http://pughlab.mbg.cornell.edu/"
+        title="pughlab" target="_blank" rel="noopener noreferrer">Frank Pugh</a> and <a href="http://mahonylab.org/people/shaun-2/
+" title="mahonylab" target="_blank" rel="noopener noreferrer">Shaun Mahony</a> at the Center for Eukaryotic Gene Regulation <a href="https://www.cegr.psu.edu/" title="cegr" target="_blank" rel="noopener noreferrer">(CEGR)</a> to build an automated
+      <a href="https://galaxyproject.org/" title="galaxyproject" target="_blank" rel="noopener noreferrer">Galaxy</a> pipeline that utilizes high performance computing clusters to analyze ChIP-exo datasets.
+    </p>
+    <br>
+    <p> I design and develop web infrastructure for knowledge discovery platforms, mostly for large scale genomic projects. I
+      also create and maintain conda packages for bioinformatic software in the <a href="https://bioconda.github.io/" title="bioconda" target="_blank" rel="noopener noreferrer">bioconda</a> channel.</p>
+    <br>
+    <p>I received my Master's in Computer Science and the Graduate Certificate in Bioinformatics from <a href="https://www.ohio.edu/" title="ohiouniversity" target="_blank" rel="noopener noreferrer">Ohio University</a>. Here is my <a
+        href="{{ site.url }}/timeline">timeline</a> and <a href="{{site.url}}/assets/resume.pdf"> résumé</a>.</p>
 
-  <p> I am interested in tools and applications that combine data visualization, data mining, deep learning and the Web.</p>
+  </div>
 
-  <a href="./public/assets/resume.pdf">Resume <i class="fas fa-file-pdf"></i></a>
 
-  <hr>
-  <p> <small> This website is built with <a href="https://jekyllrb.com/"> Jekyll </a> and <a href="https://github.com/poole/hyde"> Hyde </a> - a jekyll theme made by <a href="https://twitter.com/mdo "> @mdo</a></small>
-  </p>
-</div>
+
+  <div class="bio">
+    <h1>Publications</h1>
+    <ol>
+
+      <li>
+        <a href="https://doi.org/10.1038/s41586-021-03314-8">A high-resolution protein architecture of the budding yeast genome</a>
+        <br>
+        <p>Matthew J. Rossi, <u><strong>Prashant K. Kuntala</strong></u>, William K. M. Lai, Naomi Yamada, Nitika Badjatia, Chitvan Mittal, Guray Kuzu, Kylie Bocklund, Nina P. Farrell, Thomas R. Blanda, Joshua D. Mairose, Ann V. Basting, Katelyn S.
+          Mistretta, David J. Rocco, Emily S. Perkinson, Gretta D. Kellogg, Shaun Mahony & B. Franklin Pugh. <em>[Nature, 2021]</em>.</p>
+      </li>
+      <br>
+      <li>
+        <a href="https://www.liebertpub.com/doi/10.1089/cmb.2019.0466">ChExMix: A Method for Identifying and Classifying Protein–DNA Interaction Subtypes</a>
+        <br>
+        <p>Naomi Yamada, <u><strong>Prashant K. Kuntala</strong></u>, B. Franklin Pugh & Shaun Mahony. <em>[Journal of Computational Biology, 2020]</em>.</p>
+      </li>
+
+    </ol>
+  </div>
+
+  <div class="bio">
+    <h1>Projects</h1>
+    <ol>
+      <li>
+        <p><a href="http://www.yeastepigenome.org/">Yeast Epigenome Project (YEP)</a> is a comprehensive DNA-centric structural view of how proteins are organized into complexes across the yeast genome, including the architectural basis of fundamental gene
+          classes.</p>
+      </li>
+      <br>
+      <li>
+        <p><a href="http://www.pcrpvalidation.org/">Protein Capture Reagents Program (PCRP) Validation </a> is a community resource of renewable, high-quality protein capture reagents to understand the critical role the multitude of cellular proteins
+          play in development, health, and disease.</p>
+      </li>
+      <br>
+      <li>
+        <p><a href="https://pypi.org/project/exo/">Exo</a> is a collection of command-line utilites for the Yeast Epigenome Project and ChIP-exo data analysis.</p>
+      </li>
+      <br>
+      <li>
+        <p><a href="https://prashantkuntala.github.io/locusplotter/">Locusplotter</a> is an experimental visualization tool for discovering protein binding & co-binding patterns at interested genomic loci.</p>
+      </li>
+      <br>
+      <li>
+        <p> <a href="http://pughlab.mbg.cornell.edu/stencil/">Stencil</a> is a web templating engine that lets your share life-science datasets.</p>
+      </li>
+      <br>
+    </ol>
+    <br>
+    <h1>Some of the bioconda recepies I maintain -- </h1>
+    <ol>
+      <li>
+        <p><a href="https://anaconda.org/bioconda/chexmix" title="chexmix recepie" target="_blank" rel="noopener noreferrer">ChExMix</a> aims to characterize protein-DNA binding subtypes in ChIP-exo experiments.
+      </li>
+      <li>
+        <a href="https://anaconda.org/bioconda/chexalign" title="chexalign recepie" target="_blank" rel="noopener noreferrer">ChExAlign</a> is used for alignment and quantification of ChIP-exo crosslinking patterns.
+
+      </li>
+      <li>
+        <a href="https://anaconda.org/bioconda/sequnwinder" title="sequnwinder recepie" target="_blank" rel="noopener noreferrer">SeqUnwinder</a> is a framework for characterizing class-discriminative motifs in a collection of genomic loci that have
+        several (overlapping) annotation labels.</p>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+<!-- For Searchable blog posts. -->
+<!-- <div class="search-article"> -->
+<!-- <label for="search-input" aria-hidden="true"> -->
+<!-- Magnifier -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </label>
+
+    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
+    <ul id="search-results"></ul>
+</div> -->
+
+<!-- <section class="posts" id="Blog">
+    <h2>BLOG</h2>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        </li>
+        {% endfor %}
+    </ul>
+</section> -->
